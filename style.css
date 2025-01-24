@@ -1,47 +1,85 @@
-/* General Styles */
 body {
-    background-image: url('profileBG.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: rgba (240, 240, 240, 0.2);
-    background-blend-mode: lighten;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #a42153;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    background: linear-gradient(135deg, #ffefd5, #ffd1dc);
+    color: #2f3542;
 }
 
-/* Navbar Styles */
 nav {
-    background-color: #a94064;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    cursor: pointer;
+    background-color: #ff6b81;
+    color: #ffffff;
+    padding: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
-    margin: 0 30px;
+    margin: 0 1em;
 }
 
 nav ul li a {
-    color: palevioletred;
     text-decoration: none;
-    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 nav ul li a:hover {
-    color: lightpink;
+    color: #ffeaa7;
+}
+
+section {
+    margin: 2em auto;
+    padding: 2em;
+    max-width: 1000px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+}
+
+.images img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 2px solid #f39c12;
+}
+
+h1, h2 {
+    color: #2f3542;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #f39c12;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+    font-size: 0.9em;
+    border-top: 3px solid #ff6b81;
 }
